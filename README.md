@@ -3,8 +3,16 @@ Programming Assignment 2 (Getting &amp; Cleaning Data)
 
 > Files in this Repository
 
-1. run_analysis.R
+- run_analysis.R
 
-2. HAR Tidy Dataset (TXT ver).txt 
+- HAR Tidy Dataset.txt
 
-3. HAR Tidy Dataset (CSV ver).csv
+> Code description
+
+- read y_ dataset and join with activity labels
+- combine activity labeled dataset with subject table
+- read x_ dataset and filter for mean()/std() columns
+- combine y_ dataset and x_ dataset
+- repeat above for both test & train datasets & form single dataset
+- summarize final table by (subject, activity-label)
+- write summary table to txt file
